@@ -20,3 +20,20 @@ var json = {
 		}
 	]
 };
+
+var json2 = {
+	"VIP":[
+		{
+			"chef": "Chef Ramsey",
+			"dish": "Beef Wellington"
+		},
+		{
+			"chef": "Chef Bourdain",
+			"dish": "Coq Au Vin"
+		},
+		{
+			"chef": "Chef Morimoto",
+			"dish": "Blackened Salmon"
+		}
+	]
+};
