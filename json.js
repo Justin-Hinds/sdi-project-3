@@ -22,8 +22,7 @@ var json = {
 };
 
 var json2 = {
-	"VIP":[
-		{
+	"VIP": [{
 			"chef": "Chef Ramsey",
 			"dish": "Beef Wellington"
 		},

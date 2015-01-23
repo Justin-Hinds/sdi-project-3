@@ -1,4 +1,8 @@
-/* */
+/* 
+Justin Hinds
+SDI
+Term - 1501
+*/
 
 var chef = "Chef Blackstock",
    sous= "Sous Chef Flynn",
@@ -21,12 +25,13 @@ var vipMenu = function(dish){
 		var menuItem = menu[menuItems],
 			ingredients =  dish
 		console.log("start making " + menuItem + " It Has " + ingredients[menuItems])
-			for(entree=0; entree < dish.length; entree++)
+			for(entree=2; entree < dish.length; entree++)
 			{
 			var  ingredients = dish[menuItems];
-			console.log (ingredients)
+			console.log (ingredients + " have all been prepared, ready for the pass!")
 			}
 		}	
+			return ingredients
 	};
 var service = function(covers){
 	while(served < covers ){
@@ -44,21 +49,25 @@ var cleanUp = function(bool){
 		}else{
 			console.log(" Call for a head count")
 			} 
-			return
+			return bool;
 
 };
 journey(chef)	
+console.log(chef + " enters the restaurant and briefs his staff on the VIP's coming to eat tonight.")
+console.log("Service begins and the team starts putting out the orders before the VIP table arrives")
 service(80)
+console.log("VIP are here!")
 vipMenu(build)
 console.log( leadCook + '" I dropped the asparagus!!!"')
 var lostItem = salmon.pop()
 salmon.push("Veg Melody")
 console.log("Since " + leadCook + "decided to drop the asparagus the new build for the Blackened Salmon is " +salmon)
+
+cleanUp(serviceComplete)
 var vipOrders = function(json){
 	for(var i = 0; i < json.VIP.length; i++){
 		var chefOrder = json.VIP[i];
 		console.log("Chef" + Vip.chef + "wants " + VIP.dish )
 	}
 };
-//vipOrders(json2)
-cleanUp(serviceComplete)
+vipOrders(json2);
