@@ -5,9 +5,9 @@ var chef = "Chef Blackstock",
    leadCook = "Overton";
 var menu = ["Beef Wellington", "Coq au Vin", "Blackened Salmon"];
 var build = [["Duxelles", "Crepe", "Beef"], ["Wine", "Chicken", " Pearl Onions"], ["Salmon", "Garlic Mashed Potatoes","Asparagus"]];
-/*var wellington = ["Duxelles", "Crepe", "Beef"];
+var wellington = ["Duxelles", "Crepe", "Beef"];
 var coqAuVin = ["Wine", "Chicken", " Pearl Onions"];
-var salmon = ["Salmon", "Garlic Mashed Potatoes","Asparagus"];*/ 
+var salmon = ["Salmon", "Garlic Mashed Potatoes","Asparagus"];
 var served = 0;
 var serviceComplete = true;
 // global variables 
@@ -36,28 +36,29 @@ var service = function(covers){
 	}
 		return served;
 };
-/*var  = function(bool){
-	if(){
-	
-	}else if(){
-		
+var cleanUp = function(bool){
+	if(bool === false){
+	console.log("The night ain't over ladies and gentlemen, PICK IT UP!")
+	}else if(bool === true){
+		console.log("Well that was service now let us clean up this catastrophe!")
 		}else{
-			
+			console.log(" Call for a head count")
 			} 
 			return
 
-};*/
+};
 journey(chef)	
 service(80)
 vipMenu(build)
-/*console.log( leadCook + '" I dropped the asparagus!!!"')
+console.log( leadCook + '" I dropped the asparagus!!!"')
 var lostItem = salmon.pop()
 salmon.push("Veg Melody")
-console.log("Since " + leadCook + "decided to drop the asparagus the new build for the Blackened Salmon is " +salmon)*/
+console.log("Since " + leadCook + "decided to drop the asparagus the new build for the Blackened Salmon is " +salmon)
 var vipOrders = function(json){
 	for(var i = 0; i < json.VIP.length; i++){
 		var chefOrder = json.VIP[i];
 		console.log("Chef" + Vip.chef + "wants " + VIP.dish )
 	}
 };
-vipOrders(json2)
+//vipOrders(json2)
+cleanUp(serviceComplete)
